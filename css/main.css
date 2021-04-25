@@ -1,0 +1,161 @@
+#divmaster {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  align-items: center;
+}
+
+.body {
+  width: 100%;
+  min-height: 120vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0px;
+ padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+  height: 100vh;
+  padding
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img {
+  height: 50rem;
+}
+
+.instagram-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; /*THIS WILL INVERT ALLIGN AND JUSTIFY TO VERTICAL*/
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 1.34rem 0;
+  border: 1px solid lightgrey;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-picture img {
+  height: 6rem;
+}
+
+.instagram-login {
+  color: white;
+  font-weight: 600;
+  background-color: #0095f6;
+  padding: 5px 9px;
+  border-radius: 4px;
+}
+.instagram-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.try-our-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+/*I TRIED TO PUT IMG ON A HREF BUT ONE GET BIGGER THAN THE OTHER, SO THIS I HAT TO COPYPASTE*/
+.app-download:nth-child(1) {
+  background-image: url("/images/apple-button.png");
+}
+
+.app-download:nth-child(2) {
+  background-image: url("/images/googleplay-button.png");
+}
+
+@media (max-width: 750px) {
+  body {
+    background-color: white;
+  }
+
+  #divmaster {
+      width: 400px;
+      height: auto;
+  }
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .try-our-app {
+    display: none;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
